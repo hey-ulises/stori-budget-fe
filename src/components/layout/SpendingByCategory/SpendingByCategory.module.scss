@@ -1,0 +1,13 @@
+@use "/src/styles/index.scss" as *;
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    .categories-container {
+        display: grid;
+        // grid-template-columns: 50% 50%;
+        gap: $spacing-sm;
+    }
+}

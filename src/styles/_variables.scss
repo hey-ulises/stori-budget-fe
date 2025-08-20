@@ -8,10 +8,18 @@ $darker-color: #003A40;
 $font-family-base: 'Inter', sans-serif;
 $font-size-base: 16px;
 $font-size-lg: 20px;
-$font-size-sm: 14px;
+$font-size-sm: 13px;
 
 // Spacing
 $spacing-sm: 6px;
 $spacing-md: 16px;
 $spacing-lg: 24px;
 $spacing-xl: 32px;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Misc
+$max-w: 1320px;

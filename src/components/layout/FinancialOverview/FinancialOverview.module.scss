@@ -1,0 +1,40 @@
+@use "/src/styles/index.scss" as *;
+
+.financial-overview {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+
+    .title {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .kpi-container {
+        display: flex;
+        gap: $spacing-sm;
+        width: 100%;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .mobile-kpi {
+        display: none;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+
+            > div {
+                display: flex;
+            }
+        }
+    }
+
+    @include mobile {
+        max-width: 460px;
+    }
+}

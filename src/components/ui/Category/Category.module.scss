@@ -1,0 +1,23 @@
+@use "/src/styles/index.scss" as *;
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $darker-color;
+
+    h4::first-letter {
+        text-transform: capitalize;
+    }
+
+    p {
+        color: $dark-color;
+        font-size: $font-size-sm;
+    }
+
+    .small-text {
+        @include desktop-sm {
+            display: none;
+        }
+    }
+}

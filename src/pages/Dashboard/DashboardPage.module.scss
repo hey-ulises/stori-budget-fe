@@ -1,0 +1,46 @@
+@use "/src/styles/index.scss" as *;
+
+.dashboard {
+    display: grid;
+    width: 100%;
+    justify-self: center;
+    gap: $spacing-md;
+    max-width: $max-w;
+    grid-template-columns: 70% 30%;
+    padding-inline: 15px;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-md;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+
+        .column {
+            flex-direction: column-reverse;
+        }
+
+        .column:first-of-type {
+            flex-direction: column;
+        }
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        overflow: hidden;
+
+        .column {
+            flex-direction: column-reverse;
+        }
+
+        .column:first-of-type {
+            flex-direction: column;
+        }
+    }
+
+    @include desktop-sm {
+        grid-template-columns: 68% 32%;
+    }
+}

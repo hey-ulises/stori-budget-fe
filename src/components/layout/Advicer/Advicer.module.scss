@@ -1,0 +1,14 @@
+@use "/src/styles/index.scss" as *;
+
+.advicer {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    .insight {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+        padding: $spacing-md;
+    }
+}

@@ -1,0 +1,52 @@
+@use "/src/styles/index.scss" as *;
+
+.kpi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: $spacing-xl;
+    text-align: center;
+    width: 100%;
+
+    > p {
+        color: $dark-color;
+        font-size: $font-size-sm;
+    }
+
+    h1 {
+        font-size: clamp($font-size-lg, 2vw, 32px);
+    }
+}
+
+.green {
+    > p {
+        color: $darker-color;
+        font-size: $font-size-sm;
+        font-weight: 400;
+    }
+}
+
+.gray {
+    > p {
+        color: $secondary-color;
+        font-size: $font-size-sm;
+        font-weight: 400;
+    }
+}
+
+.mini {
+    text-align: center;
+    color: $darker-color;
+    background-color: transparent;
+
+    h1, p {
+        font-size: $font-size-base;
+    }
+
+    > p {
+        color: $darker-color;
+        font-size: $font-size-sm;
+        font-weight: 400;
+    }
+}

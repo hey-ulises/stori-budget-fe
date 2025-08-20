@@ -1,0 +1,21 @@
+@use "/src/styles/index.scss" as *;
+
+.button {
+    border: 1px solid $dark-color;
+    border-radius: $spacing-lg;
+    padding: $spacing-md $spacing-lg;
+}
+
+.white {
+    background-color: $secondary-color;
+    color: $darker-color;
+
+    &:hover {
+        color: $secondary-color;
+        background-color: rgba($color: $darker-color, $alpha: 0.95);
+    }
+
+    &:active {
+        background-color: $darker-color;
+    }
+}

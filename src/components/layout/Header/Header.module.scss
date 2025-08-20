@@ -1,0 +1,16 @@
+@use "/src/styles/index.scss" as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $max-w;
+    padding: $spacing-sm 0px;
+
+    .items {
+        display: flex;
+        gap: $spacing-lg;
+    }
+}

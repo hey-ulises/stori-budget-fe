@@ -1,0 +1,39 @@
+@use "/src/styles/index.scss" as *;
+
+.container {
+    border-radius: $spacing-lg;
+    padding: $spacing-md;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+}
+
+.white {
+    color: $darker-color;
+    background-color: $secondary-color;
+}
+
+.green {
+    color: $darker-color;
+    background-color: $primary-color;
+}
+
+.gray {
+    color: $secondary-color;
+    background-color: $dark-color;
+}
+
+.top-left {
+    border-top-left-radius: 0px;
+}
+
+.top-right {
+    border-top-right-radius: 0px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 0px;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 0px;
+}

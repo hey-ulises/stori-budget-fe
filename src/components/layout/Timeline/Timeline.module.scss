@@ -1,0 +1,37 @@
+@use "/src/styles/index.scss" as *;
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    max-height: calc(100vh - 285px);
+
+    .transactions-container {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+        // max-height: 60vh;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        /* Chrome, Edge, Safari */
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $dark-color;
+            border-radius: 3px;
+        }
+
+        /* Firefox */
+        & {
+            scrollbar-width: thin;
+            scrollbar-color: $dark-color transparent;
+        }
+    }
+}
