@@ -7,7 +7,7 @@ It connects to the backend API to display categories, transactions, KPIs, and fi
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/stori-budget-frontend.git
+git clone https://github.com/hey-ulises/stori-budget-frontend.git
 cd stori-budget-frontend
 ```
 
